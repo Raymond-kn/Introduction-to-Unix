@@ -32,8 +32,6 @@ Carpentries lesson template:
     learner for the content.
  2. `objectives` are the learning objectives for an episode displayed with
     the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
