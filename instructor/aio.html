@@ -253,6 +253,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush3">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading3">
+        <a href="introduction-2.html">2. introduction_2</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -310,9 +322,9 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Using RMarkdown</a></p>
 <hr>
-<p>Last updated on 2025-07-01 |
+<p>Last updated on 2025-07-08 |
 
-        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/melbournebioinformatics/workshop-tutorial/edit/main/episodes/introduction.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -363,9 +375,6 @@ to prime the learner for the content.</li>
 <li>
 <code>objectives</code> are the learning objectives for an episode
 displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
 </ol>
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
@@ -506,6 +515,457 @@ locally</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</section></section><section id="aio-introduction-2"><p>Content from <a href="introduction-2.html">introduction_2</a></p>
+<hr>
+<p>Last updated on 2025-07-08 |
+
+        <a href="https://github.com/melbournebioinformatics/workshop-tutorial/edit/main/episodes/introduction-2.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>How do you write a lesson using R Markdown and
+<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Explain how to use markdown with the new lesson template</li>
+<li>Demonstrate how to include pieces of code, figures, and nested
+challenge blocks</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
+<hr class="half-width">
+<p><strong>Anticipated workshop duration when delivered to a group of
+participants is <em>3 hours</em></strong>.</p>
+<p>For queries relating to this workshop, contact Melbourne
+Bioinformatics (<a href="mailto:bioinformatics-training@unimelb.edu.au">bioinformatics-training@unimelb.edu.au</a>).</p>
+<p>Find out when we are next running this training as an in-person
+workshop, by visiting the <a href="https://www.eventbrite.com.au/o/melbourne-bioinformatics-xxxxxx" class="external-link">Melbourne
+Bioinformatics Eventbrite page</a>.</p>
+<hr>
+<div class="section level3">
+<h3 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h3>
+<div class="section level4">
+<h4 id="topic">Topic<a class="anchor" aria-label="anchor" href="#topic"></a>
+</h4>
+<ul class="task-list">
+<li><label><input type="checkbox">Genomics</label></li>
+<li><label><input type="checkbox">Transcriptomics</label></li>
+<li><label><input type="checkbox">Proteomics</label></li>
+<li><label><input type="checkbox">Metabolomics</label></li>
+<li><label><input type="checkbox">Statistics and
+visualisation</label></li>
+<li><label><input type="checkbox">Structural Modelling</label></li>
+<li><label><input type="checkbox" checked>Basic skills</label></li>
+</ul>
+</div>
+<div class="section level4">
+<h4 id="skill-level">Skill level<a class="anchor" aria-label="anchor" href="#skill-level"></a>
+</h4>
+<ul class="task-list">
+<li><label><input type="checkbox" checked>Beginner</label></li>
+<li><label><input type="checkbox">Intermediate</label></li>
+<li><label><input type="checkbox">Advanced</label></li>
+</ul>
+<p>This workshop is designed for participants with little or no
+command-line knowledge.</p>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="description">Description<a class="anchor" aria-label="anchor" href="#description"></a>
+</h2>
+<hr class="half-width">
+<p>A hands-on workshop covering the basics of the Unix command line
+interface.</p>
+<p>Knowledge of the Unix operating system is fundamental to the use of
+many popular bioinformatics command-line tools. Whether you choose to
+run your analyses locally or on a high-performance computing system,
+knowing your way around a command-line interface is highly valuable.
+This workshop will introduce you to Unix concepts by way of a series of
+hands-on exercises.</p>
+<p>Completion of this workshop will provide the background knowledge
+required for several Melbourne Bioinformatics workshops that require
+command-line skills.</p>
+<p><strong>Tools:</strong> Standard Unix commands, <a href="https://filezilla-project.org/" class="external-link">FileZilla</a></p>
+<p><strong>Topic overview:</strong></p>
+<p><em>Section 1:</em> Getting started<br><em>Section 2:</em> Exploring your current directory<br><em>Section 3:</em> Making and changing directories<br><em>Section 4:</em> Viewing and manipulating files<br><em>Section 5:</em> Removing files and directories<br><em>Section 6:</em> Searching files<br><em>Section 7:</em> Putting it all together<br><em>Section 8:</em> Transferring files</p>
+</section><section><h2 class="section-heading" id="learning-objectives">Learning Objectives<a class="anchor" aria-label="anchor" href="#learning-objectives"></a>
+</h2>
+<hr class="half-width">
+<p>At the end of this introductory workshop, you will:</p>
+<ul>
+<li>Access a Unix machine either locally or remotely</li>
+<li>Navigate the file system</li>
+<li>Organise your files into directories</li>
+<li>Change file permissions to improve security and safety</li>
+<li>Move and copy files between directories</li>
+<li>Safely remove files</li>
+<li>Perform searches within files</li>
+<li>Combine commands using pipes</li>
+<li>Transfer files between a local and remote machine</li>
+</ul></section><section><h2 class="section-heading" id="tutorial-layout">Tutorial layout<a class="anchor" aria-label="anchor" href="#tutorial-layout"></a>
+</h2>
+<hr class="half-width">
+<ul>
+<li>There is a <code>Table of contents</code> on the right-hand side
+that can be used to easily navigate through the tutorial by clicking the
+relevant section.</li>
+</ul>
+<pre class="text"><code>These grey coloured boxes are code blocks. The rectangular boxes in the top right-hand corner of this code block/grey box can be used to copy the code to the clipboard.</code></pre>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p><strong>Coloured boxes like these with &gt; on the far right-hand
+side, can be clicked to reveal the contents.</strong></p>
+<p>REVEALED!</p>
+</div>
+</div>
+</div>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p><strong>Attention: Pay attention to the information in these
+boxes.</strong></p>
+<p>Important information, hints and tips.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="requirements-and-preparation">Requirements and preparation<a class="anchor" aria-label="anchor" href="#requirements-and-preparation"></a>
+</h2>
+<hr class="half-width">
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p><strong>Important</strong></p>
+<p><strong>Attendees are required to bring their own laptop
+computers.</strong></p>
+<p>At least one week before the workshop, participants should install
+the software specified below. This should provide sufficient time for
+participants to liaise with their own IT support should they encounter
+any IT problems.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="required-software">Required Software<a class="anchor" aria-label="anchor" href="#required-software"></a>
+</h3>
+<ul>
+<li>For information about required software, click <a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/" class="external-link">here</a>.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="required-data">Required Data<a class="anchor" aria-label="anchor" href="#required-data"></a>
+</h3>
+<ul>
+<li>No additional data need to be downloaded for the live delivery
+workshop.</li>
+<li>Instructions for data download for independent completion of this
+workshop are included in Section 1.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="mode-of-delivery">Mode of Delivery<a class="anchor" aria-label="anchor" href="#mode-of-delivery"></a>
+</h3>
+<p>This workshop will be run on a <a href="https://nectar.org.au/" class="external-link">Nectar</a> Instance. An “Instance” is
+Nectar terminology for a virtual machine running on the Nectar Cloud
+OpenStack infrastructure. An “Instance” runs on a “compute node”; i.e. a
+physical computer populated with processor chips, memory chips and so
+on.</p>
+<p>You will be given an individual IP address and password to log on to
+using the SSH client tool on your computer (Terminal on Mac or PuTTY on
+Windows).</p>
+<p>Should you wish to complete this workshop independently, you can do
+so locally (for Mac and LINUX users) or via binder (for Windows
+users).</p>
+</div>
+<div class="section level3">
+<h3 id="slides-and-pdf-instructions">Slides and PDF instructions<a class="anchor" aria-label="anchor" href="#slides-and-pdf-instructions"></a>
+</h3>
+<p>The slides presented during this workshop are available here: <a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/unix/media/unix_intro_slides.pdf" class="external-link">PDF</a>
+/ <a href="../path/to/slides.pptx">PPTX</a>.</p>
+<p><a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/unix/unix_intro_instructions.pdf" class="external-link">A
+printer-friendly PDF version of these workshop instructions is available
+here.</a></p>
+</div>
+</section><section><h2 class="section-heading" id="author-information">Author Information<a class="anchor" aria-label="anchor" href="#author-information"></a>
+</h2>
+<hr class="half-width">
+<p>Written by: Steven Morgan Melbourne Bioinformatics, University of
+Melbourne</p>
+<p>Created/Reviewed: November 2022</p>
+<p>A previous introductory Unix workshop is archived <a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/unix_archive_2022/unix/" class="external-link">here</a>.</p>
+</section><section><h2 class="section-heading" id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
+</h2>
+<hr class="half-width">
+<p>Before we begin the hands-on part of this workshop, we will first
+give a short presentation to introduce some important Unix concepts. The
+slides are available here: <a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/unix/media/unix_intro_slides.pdf" class="external-link">PDF</a>
+/ <a href="../path/to/slides.pptx">PPTX</a>.</p>
+</section><section><h2 class="section-heading" id="section-1-getting-started">Section 1: Getting started<a class="anchor" aria-label="anchor" href="#section-1-getting-started"></a>
+</h2>
+<hr class="half-width">
+<p>In this section, we will learn how to connect to a Unix computer via
+a program called <code>ssh</code> and run a few basic commands.</p>
+<p>Logging in connects your local computer (e.g. laptop) to a remote
+machine, and allows you to type commands into the Unix prompt. The
+commands are run on the remote machine, and the results are displayed on
+your local screen.</p>
+<p>You will be allocated a training account for the duration of the
+workshop. Your username and password will be supplied at the start of
+the workshop.</p>
+<p>We are connecting to a remote computer today so that everyone has an
+identical environment, regardless of the specifications of your local
+computer. This connection process is similar to how you would connect to
+a high-performance computing (HPC) system such as <a href="https://dashboard.hpc.unimelb.edu.au/" class="external-link">Spartan</a> at The
+University of Melbourne.</p>
+<div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p><strong>I’m not attending the live workshop. Can I complete the
+workshop independently?</strong></p>
+<p>Yes you can, although the remote machines are only provided for the
+live workshop participants.</p>
+<p>Follow the instructions for your operating system, then head down to
+the hands-on section.</p>
+</div>
+</div>
+</div>
+<div id="discussion2" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p><strong>Mac Users</strong></p>
+<p>Download the zipped file available at <a href="https://zenodo.org/your-link" class="external-link">this Zenodo address</a>. We will
+refer to these data later in the workshop.</p>
+<p>Unzip the file by double clicking it in a Finder window.</p>
+<p>Open the Terminal app (it comes preinstalled on every Mac). You can
+find it via a Spotlight Search or via the Launchpad.</p>
+<p>In the Terminal, you should see a blinking cursor. Type the following
+command and replace the word <code>PATH_TO_DIRECTORY</code> with the
+path to the location of your unzipped folder (or directory). One easy
+way to find the correct path is to view the directory in the Finder and
+enable the path bar (<em>View &gt; Show path bar</em>). You can then
+drag the correct path from the bar at the bottom of the Finder window
+into the Terminal.</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="bu">cd</span> PATH_TO_DIRECTORY</span></code></pre>
+</div>
+<p>Use the following command to confirm that you have set the correct
+working directory.</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="bu">pwd</span></span></code></pre>
+</div>
+<p>If the output of this command ends in <code>/unix_intro_data</code>,
+well done! Now continue with the hands-on section.</p>
+</div>
+</div>
+</div>
+<div id="discussion3" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p><strong>Windows Users</strong></p>
+<p>We will be using a service called binder, which builds a Docker image
+from a specified repository. This will allow you to run Unix commands in
+a live environment.</p>
+<p><a href="https://mybinder.org/your-link" class="external-link">Access the binder via your
+web browser.</a></p>
+<p>Be patient, it can take a few minutes to set up your environment.</p>
+<p>Once your binder has launched, select <em>Terminal</em> from the
+bottom left-hand corner of the main page.</p>
+<p>In the Terminal, you should see a blinking cursor. You can now
+continue with the hands-on section.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="connect-to-a-unix-computer">Connect to a Unix computer<a class="anchor" aria-label="anchor" href="#connect-to-a-unix-computer"></a>
+</h2>
+<hr class="half-width">
+<p><a href="https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/" class="external-link">Follow
+the instructions here to connect to the remote machine</a></p>
+<div id="callout4" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p><strong>Windows users</strong></p>
+<p>Windows users will need to download a terminal emulator such as <a href="https://www.putty.org/" class="external-link">PuTTY</a> (free and open-source).</p>
+</div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
+<p>Inline instructor notes can help inform instructors of timing
+challenges associated with the lessons. They appear in the “Instructor
+View”</p>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-1-can-you-do-it" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-1-can-you-do-it" class="callout-inner">
+<h3 class="callout-title">Challenge 1: Can you do it?</h3>
+<div class="callout-content">
+<p>What is the output of this command?</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
+<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?</h3>
+<div class="callout-content">
+
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>You can add a line with at least three colons and a
+<code>solution</code> tag.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</h2>
+<hr class="half-width">
+<p>You can include figures generated from R Markdown:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">pie</span><span class="op">(</span></span>
+<span>  <span class="fu">c</span><span class="op">(</span>Sky <span class="op">=</span> <span class="fl">78</span>, <span class="st">"Sunny side of pyramid"</span> <span class="op">=</span> <span class="fl">17</span>, <span class="st">"Shady side of pyramid"</span> <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>, </span>
+<span>  init.angle <span class="op">=</span> <span class="fl">315</span>, </span>
+<span>  col <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"deepskyblue"</span>, <span class="st">"yellow"</span>, <span class="st">"yellow3"</span><span class="op">)</span>, </span>
+<span>  border <span class="op">=</span> <span class="cn">FALSE</span></span>
+<span><span class="op">)</span></span></code></pre>
+</div>
+<figure style="text-align: center"><img src="../fig/introduction-2-rendered-pyramid-1.png" alt="pie chart illusion of a pyramid" class="figure mx-auto d-block"><figcaption>
+Sun arise each and every morning
+</figcaption></figure><p>Or you can use pandoc markdown for static figures with the following
+syntax:</p>
+<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
+<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">Blue Carpentries hex person logo with no
+text.</div>
+</figure></section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
+</h2>
+<hr class="half-width">
+<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
+create dynamic reports with {knitr}, so we now use mathjax to describe
+this:</p>
+<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
+<p>Cool, right?</p>
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points</h3>
+<div class="callout-content">
+<ul>
+<li>Use <code>.md</code> files for episodes when you want static
+content</li>
+<li>Use <code>.Rmd</code> files for episodes when you need to generate
+output</li>
+<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
+with your lesson</li>
+<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
+locally</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
 </section></section>
 </div>
     </main>
@@ -519,12 +979,12 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/edit/main/README.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/melbournebioinformatics/workshop-tutorial/edit/main/README.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/melbournebioinformatics/workbench-template-rmd/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/melbournebioinformatics/workbench-template-rmd/blob/main/CITATION.cff" class="external-link">Cite</a> | <a href="mailto:fixme@fixme.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+        | <a href="https://github.com/melbournebioinformatics/workshop-tutorial/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/melbournebioinformatics/workshop-tutorial/" class="external-link">Source</a></p>
+				<p><a href="https://github.com/melbournebioinformatics/workshop-tutorial/blob/main/CITATION.cff" class="external-link">Cite</a> | <a href="mailto:fixme@fixme.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
 
@@ -553,7 +1013,7 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "melbournebioinformatics.github.io/uom-varnish/instructor/aio.html",
   "identifier": "melbournebioinformatics.github.io/uom-varnish/instructor/aio.html",
-  "dateCreated": "2025-06-03",
+  "dateCreated": "2025-07-08",
   "dateModified": "2025-07-08",
   "datePublished": "2025-07-08"
 }
