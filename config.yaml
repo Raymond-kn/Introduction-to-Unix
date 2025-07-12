@@ -20,7 +20,7 @@ carpentry: 'uom'
 title: 'Lesson Title'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: 
+created:
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson'
@@ -64,18 +64,19 @@ contact: 'fixme@fixme.org'
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- introduction.Rmd
+episodes:
 - introduction-2.Rmd
+- Learning Objectives.Rmd
+- Tutorial Layout.Rmd
 
 # Information for Learners
-learners: 
+learners:
 
 # Information for Instructors
-instructors: 
+instructors:
 
 # Learner Profiles
-profiles: 
+profiles:
 
 # Customisation ---------------------------------------------
 #
