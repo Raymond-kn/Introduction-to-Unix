@@ -1,5 +1,5 @@
 ---
-title: 'introduction_2'
+title: 'Overview'
 teaching: 10
 exercises: 2
 ---
@@ -68,59 +68,54 @@ Completion of this workshop will provide the background knowledge required for s
 
 At the end of this introductory workshop, you will:
 
-- Access a Unix machine either locally or remotely
-- Navigate the file system
-- Organise your files into directories
-- Change file permissions to improve security and safety
-- Move and copy files between directories
-- Safely remove files
-- Perform searches within files
-- Combine commands using pipes
-- Transfer files between a local and remote machine
+-   Access a Unix machine either locally or remotely
+-   Navigate the file system
+-   Organise your files into directories
+-   Change file permissions to improve security and safety
+-   Move and copy files between directories
+-   Safely remove files
+-   Perform searches within files
+-   Combine commands using pipes
+-   Transfer files between a local and remote machine
 
 ## Tutorial layout
 
-- There is a `Table of contents` on the right-hand side that can be used to easily navigate through the tutorial by clicking the relevant section.
+-   There is a `Table of contents` on the right-hand side that can be used to easily navigate through the tutorial by clicking the relevant section.
 
-```text
+``` text
 These grey coloured boxes are code blocks. The rectangular boxes in the top right-hand corner of this code block/grey box can be used to copy the code to the clipboard.
-``` 
-::::::::::::::::::::::::::::: challenge
+```
 
-**Coloured boxes like these with > on the far right-hand side, can be clicked to reveal the contents.**
+::: challenge
+**Coloured boxes like these with \> on the far right-hand side, can be clicked to reveal the contents.**
 
 REVEALED!
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::
-                    
-::::::::::::::::::::::::::::: callout
-
+::: callout
 **Attention: Pay attention to the information in these boxes.**
 
 Important information, hints and tips.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Requirements and preparation
 
-::::::::::::::::::::::::::::: callout
-
+::: callout
 **Important**
 
 **Attendees are required to bring their own laptop computers.**
 
 At least one week before the workshop, participants should install the software specified below. This should provide sufficient time for participants to liaise with their own IT support should they encounter any IT problems.
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::
-                    
 ### Required Software
 
-- For information about required software, click [here](https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/).
+-   For information about required software, click [here](https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/).
 
 ### Required Data
 
-- No additional data need to be downloaded for the live delivery workshop.
-- Instructions for data download for independent completion of this workshop are included in Section 1.
+-   No additional data need to be downloaded for the live delivery workshop.
+-   Instructions for data download for independent completion of this workshop are included in Section 1.
 
 ### Mode of Delivery
 
@@ -158,18 +153,15 @@ You will be allocated a training account for the duration of the workshop. Your 
 
 We are connecting to a remote computer today so that everyone has an identical environment, regardless of the specifications of your local computer. This connection process is similar to how you would connect to a high-performance computing (HPC) system such as [Spartan](https://dashboard.hpc.unimelb.edu.au/) at The University of Melbourne.
 
-::::::::::::::::::::::::::::: callout
-
+::: callout
 **I'm not attending the live workshop. Can I complete the workshop independently?**
 
 Yes you can, although the remote machines are only provided for the live workshop participants.
 
 Follow the instructions for your operating system, then head down to the hands-on section.
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::
-                    
-::::::::::::::::::::::::::::: challenge
-
+::: challenge
 **Mac Users**
 
 Download the zipped file available at [this Zenodo address](https://zenodo.org/your-link). We will refer to these data later in the workshop.
@@ -178,24 +170,22 @@ Unzip the file by double clicking it in a Finder window.
 
 Open the Terminal app (it comes preinstalled on every Mac). You can find it via a Spotlight Search or via the Launchpad.
 
-In the Terminal, you should see a blinking cursor. Type the following command and replace the word `PATH_TO_DIRECTORY` with the path to the location of your unzipped folder (or directory). One easy way to find the correct path is to view the directory in the Finder and enable the path bar (*View > Show path bar*). You can then drag the correct path from the bar at the bottom of the Finder window into the Terminal.
+In the Terminal, you should see a blinking cursor. Type the following command and replace the word `PATH_TO_DIRECTORY` with the path to the location of your unzipped folder (or directory). One easy way to find the correct path is to view the directory in the Finder and enable the path bar (*View \> Show path bar*). You can then drag the correct path from the bar at the bottom of the Finder window into the Terminal.
 
-```bash
+``` bash
 cd PATH_TO_DIRECTORY
 ```
 
 Use the following command to confirm that you have set the correct working directory.
 
-```bash
+``` bash
 pwd
 ```
 
 If the output of this command ends in `/unix_intro_data`, well done! Now continue with the hands-on section.
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::
-                    
-::::::::::::::::::::::::::::: challenge
-
+::: challenge
 **Windows Users**
 
 We will be using a service called binder, which builds a Docker image from a specified repository. This will allow you to run Unix commands in a live environment.
@@ -207,21 +197,108 @@ Be patient, it can take a few minutes to set up your environment.
 Once your binder has launched, select *Terminal* from the bottom left-hand corner of the main page.
 
 In the Terminal, you should see a blinking cursor. You can now continue with the hands-on section.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Connect to a Unix computer
 
 [Follow the instructions here to connect to the remote machine](https://www.melbournebioinformatics.org.au/tutorials/tutorials/workshop_delivery_mode_info/workshops_nectar/)
 
-::::::::::::::::::::::::::::: callout
-
+::: callout
 **Windows users**
 
 Windows users will need to download a terminal emulator such as [PuTTY](https://www.putty.org/) (free and open-source).
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+## Hands-on
 
+:::::::::::::::::::::::::::::::::::::::: challenge
+**1.1 Run some commands**
+
+Once you’ve logged in, run the following commands and see what they do.
+
+Type each command in and hit Enter/Return. Once the previous command has completed, a new prompt indicates that it’s ready for the next command to be entered.
+
+```bash
+whoami
+```
+
+```bash
+date
+```
+
+```bash
+cal
+```
+
+:::::::::::::::::::::::: solution
+
+**Answer**
+
+- `whoami`: displays your username (i.e. the person currently logged in).
+- `date`: displays the current date and time.
+- `cal`: displays a calendar.
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: challenge
+**1.2 Try out some flags**
+
+Many Unix commands accept arguments (sometimes called flags) which enable/disable specific features. For example, you can ask the date command to produce its output in a different format.
+
+```bash
+date -I
+```
+
+It is not uncommon for a command to accept many different arguments, and, in most cases, more than one argument can be supplied at the same time. Arguments are separated by one or more space characters and they are usually case sensitive.
+
+```bash
+cal -m january
+```
+
+```bash
+cal -3
+```
+
+```bash
+cal -3 -m january
+```
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+:::::::::::::::::::::::::::::::::::::::: challenge
+**1.3 Consult the manual pages**
+
+If every Unix command has so many options, how you find out what they are and what they do? Thankfully, every Unix command has an associated *manual* that you can usually access by using the `man` command.
+
+Try accessing the manual pages for the commands we have used so far. Can you figure out what day of the week your 100<sup>th</sup> birthday will be?
+
+:::::::::::::::::::::::: solution
+
+**binder users**
+
+If you are running this workshop in a binder, manual pages may not be accessible via the `man` command.
+
+Try an internet search for your desired command followed by *manual unix* instead.
+
+:::::::::::::::::::::::::
+
+:::::::::::::::::::::::: solution
+
+**Hint**
+
+The following command displays the manual page for the `cal` command.
+
+```bash
+man cal
+```
+
+:::::::::::::::::::::::::
+
+When you are using the `man` command, use the up and down arrows to scroll, or press q to quit. The `man` command is actually using another Unix program, a text viewer called `less`, which we’ll come to later on.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
