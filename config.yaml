@@ -68,6 +68,19 @@ episodes:
 - introduction-2.Rmd
 - Learning Objectives.Rmd
 - Tutorial Layout.Rmd
+- Requirements and preparation.Rmd
+- Author Information.Rmd
+- Background.Rmd
+- Section 1 Getting started.Rmd
+- Section 2 Exploring your current directory.Rmd
+- Section 3 Making and changing directories.Rmd
+- Section 4 Viewing and manipulating files.Rmd
+- Section 5 Removing files and directories.Rmd
+- Section 6 Searching files.Rmd
+- Section 7 Putting it all together.Rmd
+- Section 8 Transferring files.Rmd
+- Finished.Rmd
+
 
 # Information for Learners
 learners:
