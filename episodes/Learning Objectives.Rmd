@@ -7,18 +7,6 @@ editor_options:
     wrap: 72
 ---
 
-::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
-:::
-
-
-::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
-:::
-
-#### Learning Objectives
-
 At the end of this introductory workshop, you will:
 
 -   Access a Unix machine either locally or remotely

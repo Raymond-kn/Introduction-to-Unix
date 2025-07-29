@@ -8,16 +8,18 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- What are some advanced Unix concepts for combining commands?
+
+- How can you use multiple commands together effectively?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn advanced techniques for combining Unix commands
+
+- Understand how to use commands together to solve more complex tasks
 :::
 
-#### Section 7: Putting it all together
 
 In this section we will cover a few more advanced Unix concepts that allow us to bring together some of the commands we have learned so far.
 

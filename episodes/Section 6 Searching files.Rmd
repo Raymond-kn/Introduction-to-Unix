@@ -8,16 +8,14 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- How do you search for specific patterns within files in Unix?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn to search within files for matching patterns
 :::
 
-#### Section 6: Searching files
 
 In this section we’ll cover how to search within files for matches to a given pattern.
 

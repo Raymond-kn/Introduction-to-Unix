@@ -8,17 +8,23 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- How do you connect to a Unix computer using ssh?
+
+- What happens when you log in to a remote machine?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn how to connect to a remote Unix computer using ssh
+
+- Understand the basics of running commands on a remote system
+
+- Know why we use remote machines for workshops (identical environment)
+
+- Recognize the similarities to connecting to HPC systems like Spartan
 :::
 
 
-#### Section 1: Getting started
 
 In this section, we will learn how to connect to a Unix computer via a program called `ssh` and run a few basic commands.
 

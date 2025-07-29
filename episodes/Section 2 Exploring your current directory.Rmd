@@ -8,16 +8,18 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- How can you view and explore the file system using Unix commands?
+
+- What files are available on the remote machine?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn basic commands to navigate and view the file system
+
+- Explore pre-loaded files on the remote Unix machine
 :::
 
-#### Section 2: Exploring your current directory
 
 In this section, we will learn how to “look” at the file system and further expand our repertoire of Unix commands.
 

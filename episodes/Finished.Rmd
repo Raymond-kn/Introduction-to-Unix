@@ -7,17 +7,6 @@ editor_options:
     wrap: 72
 ---
 
-::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
-:::
-
-
-::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
-:::
-
-#### Finished
 
 Well done, you learnt a lot over the last 8 sections; it’s a lot to take in!
 
