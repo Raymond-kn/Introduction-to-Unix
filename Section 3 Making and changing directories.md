@@ -8,16 +8,18 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- How do you change directories in Unix?
+
+- How can you create new directories?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Practice changing the current directory
+
+- Learn how to create new directories
 :::
 
-#### Section 3: Making and changing directories
 
 In this section, we will learn how to change the current directory and create entirely new ones.
 

@@ -17,7 +17,7 @@ carpentry: 'uom'
 # carpentry_description: "Custom Carpentry"
 
 # Overall title for pages.
-title: 'Lesson Title'
+title: 'Introduction to Unix'
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
 created:

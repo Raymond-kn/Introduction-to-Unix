@@ -8,16 +8,18 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- How do you view, copy, move, and rename files in Unix?
+
+- How can you change file permissions?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn to view, copy, move, and rename files
+
+- Understand how to change file permissions
 :::
 
-#### Section 4: Viewing and manipulating files
 
 In this section we will focus on files; how to view them, how to copy them, how to move them, how to rename them and how to change their permissions.
 

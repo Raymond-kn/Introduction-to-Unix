@@ -8,16 +8,15 @@ editor_options:
 ---
 
 ::: questions
--   How do you write a lesson using R Markdown and `{sandpaper}`?
+- How do you transfer files between your local computer and a remote machine?
+
+- How can FileZilla be used for file transfers?
 :::
 
 
 ::: objectives
--   Explain how to use markdown with the new lesson template
--   Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- Learn how to use FileZilla to transfer files to and from a remote machine
 :::
-
-#### Section 8: Transferring files
 
 In this section we will cover how to transfer files between a local and a remote machine using [FileZilla](https://filezilla-project.org/).
 
